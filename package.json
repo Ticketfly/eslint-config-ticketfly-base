@@ -1,0 +1,12 @@
+{
+  "name": "eslint-config-ticketfly-base",
+  "version": "1.0.0",
+  "description": "ticketfly's base eslint configuration for JavaScript applications",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/Ticketfly/eslint-config-ticketfly-base",
+    "type": "git"
+  },
+  "author": "Brian Sipple <https://twitter.com/Brian_Sipple>",
+  "license": "MIT"
+}
