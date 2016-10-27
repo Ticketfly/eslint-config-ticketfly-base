@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+
+.vscode/*
+
+# yarn
+yarn-error.log
+
+# npm
+npm-debug.log*

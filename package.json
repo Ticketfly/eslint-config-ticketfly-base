@@ -7,6 +7,33 @@
     "url": "https://github.com/Ticketfly/eslint-config-ticketfly-base",
     "type": "git"
   },
+  "scripts": {
+    "test": "node tests/test.js",
+    "lint:rules": "eslint rules/",
+    "lint:tests": "eslint tests/"
+  },
   "author": "Brian Sipple <https://twitter.com/Brian_Sipple>",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "ticketfly",
+    "javascript",
+    "styleguide",
+    "code",
+    "quality",
+    "style",
+    "lint",
+    "linter"
+  ],
+  "bugs": {
+    "url": "https://github.com/Ticketfly/eslint-config-ticketfly-base/issues"
+  },
+  "devDependencies": {
+    "eslint": "^3.8.1"
+  },
+  "peerDependencies": {
+    "eslint": ">=3.8.1"
+  }
 }
