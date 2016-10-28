@@ -1,5 +1,3 @@
-'use strict';
-
 const assert = require('assert');
 const { CLIEngine } = require('eslint');
 
@@ -7,9 +5,9 @@ const { CLIEngine } = require('eslint');
  * Files in the repo to test
  */
 const filesUnderTest = [
-  'index.js',
-  'base.js',
-  'recommended.js',
+  'lib/index.js',
+  'lib/base.js',
+  'lib/recommended.js',
   'tests/test.js',
   'rules/best-practices.js',
   'rules/es2015.js',
@@ -23,7 +21,7 @@ const filesUnderTest = [
 const eslintOpts = {
   envs: ['node', 'es6'],
   useEslintrc: false,
-  configFile: './index.js'
+  configFile: './lib/index.js'
 };
 
 const report = new CLIEngine(eslintOpts).executeOnFiles(filesUnderTest);

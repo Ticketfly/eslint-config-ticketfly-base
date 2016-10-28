@@ -34,15 +34,15 @@ The most straightforward approach involves extending the root project name:
 }
 ```
 
-This will provide the configuration files [composed in `base.js`](./base.js)
+This will provide the configuration files [composed in `lib/base.js`](./lib/base.js)
 (which, first and foremost, extend from [`eslint:recommended`](http://eslint.org/docs/rules/)).
 
-**In most cases, however, you'll likely want to extend from [our "recommended" setup](./recommended.js),
+**In most cases, however, you'll likely want to extend from [our "recommended" setup](./lib/recommended.js),
 which is optimized for modern browser environments**:
 
 ```js
 {
-    extends: 'ticketfly-base/recommended',  // shorthand for 'eslint-config-ticketfly-base'
+    extends: 'ticketfly-base/lib/recommended',  // shorthand for 'eslint-config-ticketfly-base'
     rules: {
       // Additional, per-project rules...
     }
@@ -55,9 +55,9 @@ If you want to be more selective, however, you can always compose individual fil
 {
     extends: [
       'eslint:recommended'
-      'eslint-config-ticketfly-base/best-practices',
-      'eslint-config-ticketfly-base/possible-errors',
-      'eslint-config-ticketfly-base/nodejs-and-commonjs'
+      'eslint-config-ticketfly-base/rules/best-practices',
+      'eslint-config-ticketfly-base/rules/possible-errors',
+      'eslint-config-ticketfly-base/rules/nodejs-and-commonjs'
     ].map(require.resolve),
 
     rules: {
