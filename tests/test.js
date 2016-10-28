@@ -1,3 +1,5 @@
+'use strict';
+
 const assert = require('assert');
 const { CLIEngine } = require('eslint');
 
@@ -5,6 +7,9 @@ const { CLIEngine } = require('eslint');
  * Files in the repo to test
  */
 const filesUnderTest = [
+  'index.js',
+  'base.js',
+  'recommended.js',
   'tests/test.js',
   'rules/best-practices.js',
   'rules/es2015.js',

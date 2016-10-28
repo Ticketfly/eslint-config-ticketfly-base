@@ -20,8 +20,8 @@ Then install this configuration:
 
 ## Usage
 
-You'll need to configure the way that you extend from `eslint-config-ticketfly-base` 
-inside of your `eslintrc.js` file. 
+You'll need to configure the way that you extend from `eslint-config-ticketfly-base`
+inside of your `.eslintrc.js` file.
 
 The most straightforward approach involves extending the root project name:
 
@@ -34,10 +34,22 @@ The most straightforward approach involves extending the root project name:
 }
 ```
 
-This will provide the configuration files [composed in `index.js`](./index.js)
+This will provide the configuration files [composed in `base.js`](./base.js)
 (which, first and foremost, extend from [`eslint:recommended`](http://eslint.org/docs/rules/)).
 
-If you want to be more selecive, however, you can always compose individual files yourself: 
+**In most cases, however, you'll likely want to extend from [our "recommended" setup](./recommended.js),
+which is optimized for modern browser environments**:
+
+```js
+{
+    extends: 'ticketfly-base/recommended',  // shorthand for 'eslint-config-ticketfly-base'
+    rules: {
+      // Additional, per-project rules...
+    }
+}
+```
+
+If you want to be more selective, however, you can always compose individual files yourself:
 
 ```js
 {
@@ -47,7 +59,7 @@ If you want to be more selecive, however, you can always compose individual file
       'eslint-config-ticketfly-base/possible-errors',
       'eslint-config-ticketfly-base/nodejs-and-commonjs'
     ].map(require.resolve),
-    
+
     rules: {
       // Additional, per-project rules...
     }

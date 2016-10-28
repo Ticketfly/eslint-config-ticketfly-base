@@ -9,11 +9,13 @@
   },
   "scripts": {
     "test": "node tests/test.js",
+    "lint:root": "eslint *.js",
     "lint:rules": "eslint rules/",
     "lint:tests": "eslint tests/"
   },
   "author": "Brian Sipple <https://twitter.com/Brian_Sipple>",
   "license": "MIT",
+  "homepage": "https://github.com/Ticketfly/eslint-config-ticketfly-base",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -35,5 +37,8 @@
   },
   "peerDependencies": {
     "eslint": ">=3.8.1"
+  },
+  "engines": {
+    "node": ">= 4"
   }
 }
