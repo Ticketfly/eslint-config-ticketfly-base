@@ -1,0 +1,3 @@
+circle.yml
+yarn-error.log
+tests/*
