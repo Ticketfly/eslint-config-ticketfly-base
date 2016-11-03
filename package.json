@@ -2,14 +2,14 @@
   "name": "eslint-config-ticketfly-base",
   "version": "1.0.0",
   "description": "ticketfly's base eslint configuration for JavaScript applications",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {
     "url": "https://github.com/Ticketfly/eslint-config-ticketfly-base",
     "type": "git"
   },
   "scripts": {
     "test": "node tests/test.js",
-    "lint:root": "eslint *.js",
+    "lint:lib": "eslint lib/",
     "lint:rules": "eslint rules/",
     "lint:tests": "eslint tests/"
   },
