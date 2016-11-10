@@ -12,7 +12,11 @@ You can install ESLint using npm:
     npm install eslint --save-dev
 ```
 
-Then install this configuration:
+\*_Note that if your build process includes using a tool that runs ESLint
+(for example, [Ember CLI ESLint](https://github.com/ember-cli/ember-cli-eslint)),
+installing `eslint` directly might not be necessary_.
+
+Next, install this configuration:
 
 ```sh
     npm install eslint-config-ticketfly-base --save-dev
