@@ -52,6 +52,10 @@ module.exports = {
     // http://eslint.org/docs/rules/linebreak-style
     'linebreak-style': ['error', 'unix'],
 
+    // require an empty line after variable declarations
+    // http://eslint.org/docs/rules/newline-after-var
+    'newline-after-var': ['error', 'always'],
+
     // disallow Array constructors
     // http://eslint.org/docs/rules/no-array-constructor
     'no-array-constructor': ['error'],
