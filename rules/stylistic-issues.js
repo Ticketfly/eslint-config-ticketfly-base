@@ -52,6 +52,10 @@ module.exports = {
     // http://eslint.org/docs/rules/linebreak-style
     'linebreak-style': ['error', 'unix'],
 
+    // disallow Array constructors
+    // http://eslint.org/docs/rules/no-array-constructor
+    'no-array-constructor': ['error'],
+
     // disallow use of unary operators, ++ and --
     // http://eslint.org/docs/rules/no-plusplus
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
