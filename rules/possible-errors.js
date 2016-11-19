@@ -15,4 +15,4 @@ module.exports = {
     // http://eslint.org/docs/rules/no-unsafe-negation
     'no-unsafe-negation': 'error'
   }
-}
+};
