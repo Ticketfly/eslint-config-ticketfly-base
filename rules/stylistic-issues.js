@@ -62,6 +62,10 @@ module.exports = {
     // specify whether double or single quotes should be used
     quotes: ['error', 'single', { avoidEscape: true }],
 
+    // require semicolons at the end of statements
+    // http://eslint.org/docs/rules/semi
+    semi: ['error', 'always'],
+
     // require or disallow space before blocks
     'space-before-blocks': 'error'
   }
