@@ -7,8 +7,9 @@
  */
 module.exports = {
   rules: {
-    // require or disallow strict mode directives
+    // disallow strict mode directives
+    // (we prefer ECMAScript2015+ module environment, where strict mode is already implied)
     // http://eslint.org/docs/rules/strict#rule-details
-    strict: ['error', 'never']  // we prefer ECMAScript2015+ module environment, where strict mode is already implied
+    strict: ['error', 'never']
   }
 };
