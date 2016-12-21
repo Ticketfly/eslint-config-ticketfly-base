@@ -65,7 +65,8 @@ module.exports = {
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
 
     // disallow trailing whitespace at the end of lines
-    'no-trailing-spaces': 'error',
+    // http://eslint.org/docs/rules/no-trailing-spaces#skipblanklines
+    'no-trailing-spaces': ['error', { skipBlankLines: true }],
 
     // specify whether double or single quotes should be used
     quotes: ['error', 'single', { avoidEscape: true }],
