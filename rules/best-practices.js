@@ -38,7 +38,8 @@ module.exports = {
 
     // require immediate function invocation to be wrapped in parentheses
     // http://eslint.org/docs/rules/wrap-iife.html
-    'wrap-iife': ['error', 'outside'],  // use this style: ``` var x = (function () { return { y: 1 };}()); ```,
+    // HINT: use this style: `var x = (function () { return { y: 1 };}());`,
+    'wrap-iife': ['error', 'outside'],
 
     // require or disallow Yoda conditions
     yoda: 'error'

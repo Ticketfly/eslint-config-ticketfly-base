@@ -48,9 +48,28 @@ module.exports = {
       }
     }],
 
+    //  enforces line comments only above code, in its own line.
+    // http://eslint.org/docs/rules/line-comment-position
+    'line-comment-position': ['error', { position: 'above' }],
+
     // disallow mixed 'LF' and 'CRLF' as linebreaks
     // http://eslint.org/docs/rules/linebreak-style
     'linebreak-style': ['error', 'unix'],
+
+    // require empty lines around comments
+    // http://eslint.org/docs/rules/lines-around-comment
+    'lines-around-comment': ['error', {
+      beforeBlockComment: true,
+      afterBlockComment: false,
+      beforeLineComment: true,
+      afterLineComment: false,
+      allowBlockStart: true,
+      allowBlockEnd: false,
+      allowObjectStart: true,
+      allowObjectEnd: false,
+      allowArrayStart: true,
+      allowArrayEnd: false
+    }],
 
     // require an empty line after variable declarations
     // http://eslint.org/docs/rules/newline-after-var
@@ -59,6 +78,10 @@ module.exports = {
     // disallow Array constructors
     // http://eslint.org/docs/rules/no-array-constructor
     'no-array-constructor': ['error'],
+
+    // disallow inline comments after code
+    // http://eslint.org/docs/rules/no-inline-comments
+    'no-inline-comments': 'error',
 
     // disallow use of unary operators, ++ and --
     // http://eslint.org/docs/rules/no-plusplus
@@ -76,6 +99,18 @@ module.exports = {
     semi: ['error', 'always'],
 
     // require or disallow space before blocks
-    'space-before-blocks': 'error'
+    'space-before-blocks': 'error',
+
+    // enforce consistent spacing after the // or /* in a comment
+    // http://eslint.org/docs/rules/spaced-comment
+    'spaced-comment': ['error', 'always', {
+      line: {
+        exceptions: ['-', '+']
+      },
+      block: {
+        exceptions: ['-', '+'],
+        balanced: false
+      }
+    }]
   }
 };
