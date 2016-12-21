@@ -91,8 +91,11 @@ module.exports = {
     // http://eslint.org/docs/rules/no-trailing-spaces#skipblanklines
     'no-trailing-spaces': ['error', { skipBlankLines: true }],
 
-    // specify whether double or single quotes should be used
-    quotes: ['error', 'single', { avoidEscape: true }],
+    // enforce the consistent use of single quotes, while also allowing
+    // deviations where an escape character would be needed otherwise, and
+    // allowing backticks for template-literals
+    // http://eslint.org/docs/rules/quotes
+    quotes: ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
 
     // require semicolons at the end of statements
     // http://eslint.org/docs/rules/semi
