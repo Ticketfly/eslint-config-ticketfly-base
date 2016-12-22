@@ -1,6 +1,6 @@
 # 1.2.0 / December 21, 2016
 
-- **[NEW]** More refined rules for quotes ([#5](https://github.com/Ticketfly/eslint-config-ticketfly-base/pull/5))
+- **[NEW]** More-refined rules for quotes ([#5](https://github.com/Ticketfly/eslint-config-ticketfly-base/pull/5))
 - **[ENHANCEMENT]** Allow trailing spaces on empty lines ([#6](https://github.com/Ticketfly/eslint-config-ticketfly-base/pull/6))
 - **[NEW]** Define rules around proper comment syntax ([#7](https://github.com/Ticketfly/eslint-config-ticketfly-base/pull/7))
 
