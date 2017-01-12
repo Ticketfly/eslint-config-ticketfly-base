@@ -81,7 +81,7 @@ module.exports = {
 
     // disallow inline comments after code
     // http://eslint.org/docs/rules/no-inline-comments
-    'no-inline-comments': 'error',
+    'no-inline-comments': 'off',
 
     // disallow use of unary operators, ++ and --
     // http://eslint.org/docs/rules/no-plusplus
