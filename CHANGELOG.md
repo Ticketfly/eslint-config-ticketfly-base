@@ -1,3 +1,8 @@
+# 2.0.0 / January, 16 2017
+
+- **[BREAKING CHANGE]** Turn off `no-inline-comments` rule ([#9](https://github.com/Ticketfly/eslint-config-ticketfly-base/pull/9))
+
+
 # 1.2.0 / December 21, 2016
 
 - **[NEW]** More-refined rules for quotes ([#5](https://github.com/Ticketfly/eslint-config-ticketfly-base/pull/5))

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ticketfly-base",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Ticketfly's base ESLint configuration for JavaScript applications",
   "main": "lib/index.js",
   "repository": {
