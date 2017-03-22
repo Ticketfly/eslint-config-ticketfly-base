@@ -36,6 +36,10 @@ module.exports = {
     // disallow use of new operator when not part of the assignment or comparison
     'no-new': 'error',
 
+    // disallow reassigning function parameters
+    // http://eslint.org/docs/rules/no-param-reassign
+    'no-param-reassign': ['error'],
+
     // require immediate function invocation to be wrapped in parentheses
     // http://eslint.org/docs/rules/wrap-iife.html
     // HINT: use this style: `var x = (function () { return { y: 1 };}());`,
